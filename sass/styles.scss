@@ -650,10 +650,6 @@ Instagram
 /* ==========================================================================
 Engagement Pics
 ========================================================================== */
-#picture-row {
-  margin-bottom: 30px;
-}
-
 #eng-pics {
   img {
     width: 100%;
@@ -717,6 +713,9 @@ Engagement Pics
     left: 34%;
     top: 75%;
     z-index: -1;
+  }
+  .picture-row {
+    margin-bottom: 30px;
   }
 }
 
