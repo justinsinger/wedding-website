@@ -199,7 +199,7 @@ $(document).ready(function () {
                 url: 'https://script.google.com/macros/s/AKfycbz8sPsf5-EX5j7AH2HNigkCn008nhZhgDoQajVnwGe-tAmlcw/exec',
                 method: "GET",
                 dataType: "json",
-                data: $(this).serializeObject()
+                data: $(this).serialize()
             }).done(function (data) {
                 console.log(data);
                 if (data.result === "error") {
@@ -217,21 +217,6 @@ $(document).ready(function () {
 });
 
 /********************** Extras **********************/
-
-// Google map
-function initMap() {
-    var location = {lat: 39.9416, lng: 75.1412};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: location,
-        scrollwheel: false
-    });
-
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
-}
 
 // alert_markup
 function alert_markup(alert_type, msg) {
