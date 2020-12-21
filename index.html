@@ -446,42 +446,102 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 1st of July '21</p>
+                <h3>Let Us Know You'll Celebrate With Us</h3>
+                <p>We would greatly appreciate if you could RSVP before 1st of July 2021</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
+                    <h4>First Guest</h4>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
+                                <i class="fa fa-user"></i><input name="name_1" class=""
+                                                                 placeholder="Name"
+                                                                 required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
+                                <i class="fa fa-envelope"></i><input type="email" name="email_1" class=""
+                                                                     placeholder="Email"
+                                                                     required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
+                                <i class="fa fa-phone"></i><input type="tel" id="phone_1" name="phone_1"
+                                                                  placeholder="Phone Number"
                                                                   required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
+                                <i class="fa fa-cutlery"></i>
+                                <select id="food_1" name="food_1" required>
+                                    <option value="">Dinner Protein</option>
+                                    <option value="beef">Beef</option>
+                                    <option value="chicken">Chicken</option>
+                                    <option value="fish">Fish</option>
+                                    <option value="veg">Vegitarian</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-sticky-note-o"></i><input type="text" name="notes_1" id="notes_1" placeholder="Please list any food allergies or intollerances as well as other considerations here">
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Second Guest</h4>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name_2" class=""
+                                                                 placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="email" name="email_2" class=""
+                                                                     placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-phone"></i><input type="tel" id="phone_2" name="phone_2"
+                                                                  placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-cutlery"></i>
+                                <select id="food_2" name="food_2">
+                                    <option value="">Dinner Protein</option>
+                                    <option value="beef">Beef</option>
+                                    <option value="chicken">Chicken</option>
+                                    <option value="fish">Fish</option>
+                                    <option value="veg">Vegitarian</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-sticky-note-o"></i><input type="text" name="notes_2" id="notes_2" placeholder="Please list any food allergies or intollerances as well as other considerations here">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input type="text" name="invite_code" id="invite_code" placeholder="Invite code" required="">
                             </div>
                         </div>
                     </div>
@@ -489,8 +549,7 @@
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
+                        Send RSVP
                     </button>
                 </form>
             </div>
