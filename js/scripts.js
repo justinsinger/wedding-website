@@ -182,7 +182,7 @@ $(document).ready(function () {
     $('#add-to-cal').html(myCalendar);
 
     /********** Show Covid Notice on load *************/
-    $('#dc-modal').modal('show');
+    // $('#dc-modal').modal('show');
 
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
